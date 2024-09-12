@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    position: relative;
+
+}
+span {
+    text-transform: capitalize;
+    font-size: 50px;
+
+}
+
+span::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 6px;
+    background-color: rgb(59, 59, 141);
+    display: block;
+    margin-left: 45%;
+    margin-top: 5px;
+    
+}
+.games{
+    position: relative;
+}
+
+.games .left_div{
+    margin: 50px 0;
+    background-image: url(../Imgies/car7.png);
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    animation-name: change ;
+    animation-duration: 3s ;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+.games .right_div{
+    margin: 50px 0;
+    background-image: url(../Imgies/car3.png);
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    animation-name: change ;
+    animation-duration: 3s ;
+    right: 0;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+.div2{
+    top: 100px;
+} 
+.div3{
+    animation-delay: 3s;
+    top: 200px;
+} 
+.div4{
+    animation-delay: 3s;
+    top: 300px;
+} 
+.div5{
+    animation-delay: 6s;
+    top: 400px;
+} 
+.div6{
+    animation-delay: 6s;
+    top: 500px;
+} 
+.div7{
+    animation-delay: 9s;
+    top: 600px;
+} 
+.div8{
+    animation-delay: 9s;
+    top: 700px;
+} 
+@keyframes change {
+    from{
+ left: 0;   
+ }
+
+    to{
+ left: 90%;
+    }
+} 
